@@ -1,4 +1,4 @@
-package com.dyatmarize.postabletrnd.view.data
+package com.dyatmarize.postabletrnd.exception
 
 data class ExceptionData(
     val throwable: Throwable,

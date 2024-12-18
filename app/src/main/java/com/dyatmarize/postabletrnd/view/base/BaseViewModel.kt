@@ -3,10 +3,10 @@ package com.dyatmarize.postabletrnd.view.base
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.dyatmarize.postabletrnd.view.data.ExceptionData
+import com.dyatmarize.postabletrnd.exception.ExceptionData
 import com.parkee.agentmobile.event.SingleLiveEvent
 
-class BaseViewModel : ViewModel() {
+open class BaseViewModel : ViewModel() {
     protected val TAG: String = javaClass.simpleName
 
     protected val _errorData: SingleLiveEvent<ExceptionData> = SingleLiveEvent()

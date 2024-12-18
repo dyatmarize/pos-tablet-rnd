@@ -27,8 +27,8 @@ buildscript {
     dependencies {
         classpath libs.gradle
         classpath libs.kotlin.gradle.plugin
-        classpath libs.google.services
-        classpath libs.firebase.crashlytics.gradle
+//        classpath libs.google.services
+//        classpath libs.firebase.crashlytics.gradle
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
 
@@ -47,6 +47,6 @@ allprojects {
     }
 }
 
-tasks.register('clean', Delete) {
-    delete rootProject
+task clean(type: Delete) {
+    delete rootProject.getBuildDir()
 }

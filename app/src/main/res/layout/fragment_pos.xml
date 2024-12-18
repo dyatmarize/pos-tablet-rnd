@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.main.pos.PosFragment">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.dyatmarize.postabletrnd.view.main.pos.PosViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Right Panel -->
+        <FrameLayout
+            android:id="@+id/leftPanel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_green_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintWidth_percent="0.6">  <!-- Left Panel takes 70% of the width -->
+
+            <TextView
+                android:id="@+id/rightPanelTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Left Panel"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <!-- Left Panel -->
+        <LinearLayout
+            android:id="@+id/rightPanel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/holo_blue_light"
+            android:padding="16dp"
+            app:layout_constraintStart_toEndOf="@+id/leftPanel"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/leftPanelTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Right Panel"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button 1"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button 2"/>
+
+            <dev.dayaonweb.incrementdecrementbutton.IncrementDecrementButton
+                android:id="@+id/qtyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:buttonBackground="@color/white"
+                app:middleText="0"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -7,9 +7,10 @@ coreKtxVersion = "1.15.0"
 firebaseCrashlyticsGradle = "3.0.2"
 glide = "4.12.0"
 googleServices = "4.4.2"
-gradle = "8.3.2"
+gradle = "8.7.1"
 guava = "32.0.0-android"
 hiltAndroid = "2.51.1"
+incrementdecrementbutton = "2.0.0"
 jacksonDatabind = "2.17.1"
 jacksonDatatypeJsr310 = "2.17.1"
 jacksonModuleKotlin = "2.15.4"
@@ -37,6 +38,7 @@ threetenabp = "1.4.0"
 timber = "5.0.1"
 toolargetool = "0.3.0"
 zxingAndroidEmbedded = "4.2.0"
+fragmentKtx = "1.8.5"
 
 [libraries]
 androidx-appcompat-v130 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
@@ -62,6 +64,7 @@ google-services = { module = "com.google.gms:google-services", version.ref = "go
 gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+incrementdecrementbutton = { module = "com.github.Damercy:IncrementDecrementButton", version.ref = "incrementdecrementbutton" }
 jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jacksonDatabind" }
 jackson-datatype-jsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310", version.ref = "jacksonDatatypeJsr310" }
 jackson-module-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jacksonModuleKotlin" }
@@ -81,6 +84,7 @@ threetenabp = { module = "com.jakewharton.threetenabp:threetenabp", version.ref 
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 toolargetool = { module = "com.gu.android:toolargetool", version.ref = "toolargetool" }
 zxing-android-embedded = { module = "com.journeyapps:zxing-android-embedded", version.ref = "zxingAndroidEmbedded" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragmentKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
